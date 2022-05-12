@@ -37,37 +37,40 @@
 ├── structure.txt       <- Shows project structure
 │
 ├── .gitignore          <- Avoids uploading data, credentials,
-|                         outputs, system files etc
+│                         outputs, system files etc
 │
-└── src                       <- Source code for use in this project.
-    ├── __init__.py           <- Makes src a Python module
-    │
-    ├── d00_utils             <- Functions used across the project
-    │   └── remove_accents.py
-    │
-    ├── d01_data              <- Scripts for reading and writing data etc
-    │   └── load_data.py
-    │
-    ├── d02_intermediate      <- Scripts to transform data from raw to intermediate. CAUTION: some transformations
-    │   │                        need processors from d03 (e.g. create a new feature used for filling NAs)
-    │   └── create_int_payment_data.py
-    │
-    ├── d03_processing        <- Transformer classes to turn intermediate data into
-    |   |                       modelling input (classes transform method add _a/_b columns when applicable)
-    │   └── create_master_table.py
-    │
-    ├── d04_modelling         <- Scripts to train models and then use trained models to make predictions.
-    │   └── train_model.py
-    │
-    ├── d05_model_evaluation  <- Scripts that analyse model performance and model selection.
-    │   └── calculate_performance_metrics.py
-    │
-    ├── d06_analysis          <- Scripts to analyze results and run custom code for further analysis.
-    │   │                        Naming convention is date YYYYMMDD (for ordering)
-    │   └── 20200623_analysis.py
-    │
-    ├── d07_reporting         <- Scripts to produce reporting tables
-    │   └── create_rpt_payment_summary.py
-    │
-    └── d08_visualisation     <- Scripts to create frequently used plots
-        └── visualise_patient_journey.py
+├── src_py                    <- Python source code for use in this project.
+│   ├── __init__.py           <- Makes src a Python module
+│   │
+│   ├── d00_utils             <- Functions used across the project
+│   │   └── remove_accents.py
+│   │
+│   ├── d01_data              <- Scripts for reading and writing data etc
+│   │   └── load_data.py
+│   │
+│   ├── d02_intermediate      <- Scripts to transform data from raw to intermediate. CAUTION: some transformations
+│   │   │                        need processors from d03 (e.g. create a new feature used for filling NAs)
+│   │   └── create_int_payment_data.py
+│   │
+│   ├── d03_processing        <- Transformer classes to turn intermediate data into
+│   |   |                       modelling input (classes transform method add _a/_b columns when applicable)
+│   │   └── create_master_table.py
+│   │
+│   ├── d04_modelling         <- Scripts to train models and then use trained models to make predictions.
+│   │   └── train_model.py
+│   │
+│   ├── d05_model_evaluation  <- Scripts that analyse model performance and model selection.
+│   │   └── calculate_performance_metrics.py
+│   │
+│   ├── d06_analysis          <- Scripts to analyze results and run custom code for further analysis.
+│   │   │                        Naming convention is date YYYYMMDD (for ordering)
+│   │   └── 20200623_analysis.py
+│   │
+│   ├── d07_reporting         <- Scripts to produce reporting tables
+│   │   └── create_rpt_payment_summary.py
+│   │
+│   └── d08_visualisation     <- Scripts to create frequently used plots
+│       └── visualise_patient_journey.py
+│
+├── src_r                     <- R source code for use in this project.
+│   ├── .gitkeep              <- TBD

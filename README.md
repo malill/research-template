@@ -15,4 +15,4 @@ functions located in the /src folder.
 module d06.
 
 ### Acknowledgment
-Initial project structure was created by https://drivendata.github.io/cookiecutter-data-science/
+Initial project structure was created by https://github.com/dssg/hitchhikers-guide.git
