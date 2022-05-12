@@ -1,0 +1,15 @@
+name: ml-1
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyter~=1.0.0
+  - matplotlib~=3.5.2
+  - pandas~=1.4.2
+  - pip~=22.0.4
+  - python~=3.9
+  - scikit-learn~=1.0.2
+  - scipy~=1.8.0
+  - pip:
+    - tensorflow~=2.8.0
+    # Since current version of tf not available on conda, we install via pip. (2.8. supports both CPU/GPU)
