@@ -176,3 +176,9 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+############
+## CUSTOM ##
+############
+# e.g. large data sets
+# data/01_raw
