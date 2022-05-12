@@ -177,6 +177,12 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
+
+#########
+## IDE ##
+#########
+.idea/
+
 ############
 ## CUSTOM ##
 ############
