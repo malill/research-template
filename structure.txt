@@ -1,3 +1,4 @@
+├── environment.yml     <- Basic Python dependencies for Conda environment.
 ├── README.md           <- The top-level README for developers.
 ├── conf                <- Space for credentials
 │
