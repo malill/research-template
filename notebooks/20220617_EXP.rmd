@@ -10,5 +10,8 @@ position the caret at any line or the code chunk, then click "+".
 
 ```{r}
 x <- 1
-cat("Hello World")
+# source('src_r/my_world.R')
+# '..' for HTML output
+source('../src_r/my_world.R')
+hello_world()
 ```
