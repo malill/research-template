@@ -1,14 +1,14 @@
-def hello_world():
-    print("This is the world we live in...")
-
-
 import tensorflow as tf
 import datetime as dt
-from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D
-from tensorflow.keras.utils import to_categorical
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import Flatten
+from keras import Sequential
+from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Dense
+from keras.layers import Flatten
+from keras.utils.np_utils import to_categorical
+
+
+def hello_world():
+    print("This is the world we live in...")
 
 
 def tf_test(device):
