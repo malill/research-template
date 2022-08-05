@@ -13,7 +13,8 @@ The purpose of this project is ________.
 functions located in the /src folder.
 - Steps required for generating data stages and analyze models are performed in 
 module d06.
-- To update module version in environment.yml run "conda env update --name ml-1 --file environment.yml --prune"
+- To install the conda environment `ml-1` run `conda env create -f environment.yml`
+- To update module version in environment.yml run `conda env update --name ml-1 --file environment.yml --prune`
 
 ### Acknowledgment
 Initial project structure was created by https://github.com/dssg/hitchhikers-guide.git

@@ -8,6 +8,13 @@ handy capabilities to work with the [R Markdown](https://www.jetbrains.com/help/
 To [add](https://www.jetbrains.com/help/pycharm/r-markdown.html#add-code-chunk) a new R chunk,
 position the caret at any line or the code chunk, then click "+".
 
+
+```{r}
+cat("Hello World")
+```
+
+In Dataspell: if code is stored in other R script files run "Knit and Open Document", the execution task "Run All Chunks" won't work because of workspace issue.
+
 ```{r}
 x <- 1
 # source('src_r/my_world.R')
