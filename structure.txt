@@ -6,7 +6,7 @@
 │   ├── 01_raw          <- Immutable input data
 │   ├── 02_intermediate <- Cleaned version of raw (no missing values, outliers, unreadable data etc.)
 │   ├── 03_processed    <- Train data used to develop models (including interactions, new features etc. with 2 columns
-│   │                      (_a, _b) whenever there are transformations using datapoint's label as part of features),
+│   │                      (_a, _b) whenever there are transformations using a datapoint's label as part of feature),
 │   │                      derived test data for prediction (using processed train data and _b columns when applicable)
 │   ├── 04_models       <- Trained models (.pkl files using joblib). Naming convention is date YYYYMMDD (for ordering),
 │   │                      '_', score, '_' and a short description of the used model
@@ -17,12 +17,13 @@
 │
 ├── notebooks           <- Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), '_'
 │   │                      and 3 capital letters for kind of notebook.
-│   ├── 01_exploration  <- Get the data and explore given and potential features (data: raw)
+│   ├── 01_exploration  <- Get the data and explore given and potential features; note: expl. is an iterative process,
+│   │                      i.e. some steps rely on intermediate/processed data.
 │   ├── 02_processing   <- Prepare data for modeling (data: raw -> intermediate -> processed)
 │   ├── 03_analysis     <- Run many models and measure performance, significant features, errors, rerun models
-│   │                      with subset feature selection (data: processed)
-│   ├── 04_tuning       <- Fine tune your model (data: processed)
-│   ├── 05_preparation  <- Prepare your test data (data: processed)
+│   │                      with subset feature selection
+│   ├── 04_tuning       <- Fine tune your model
+│   ├── 05_preparation  <- Prepare your test data
 │   ├── 06_reports      <- List your results
 │
 ├── references          <- Data dictionaries, manuals, etc.
