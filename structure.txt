@@ -18,7 +18,7 @@
 ├── notebooks           <- Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), '_'
 │   │                      and 3 capital letters for kind of notebook.
 │   ├── 01_exploration  <- Get the data and explore given and potential features; note: expl. is an iterative process,
-│   │                      i.e. some steps rely on intermediate/processed data.
+│   │                      i.e. some steps might rely on intermediate/processed data.
 │   ├── 02_processing   <- Prepare data for modeling (data: raw -> intermediate -> processed)
 │   ├── 03_analysis     <- Run many models and measure performance, significant features, errors, rerun models
 │   │                      with subset feature selection
@@ -29,16 +29,16 @@
 ├── references          <- Data dictionaries, manuals, etc.
 │
 ├── results             <- Final analysis docs.
-│   ├── figures         <- Generated graphics and figures to be used in reporting
+│   ├── figures         <- Generated graphics and figures to be used in reporting or papers
 │   ├── submissions     <- Final submission files (e.g. csv). Naming convention is date YYYYMMDD (for ordering), '_',
-│                          score, '_' and a short description of the used model (analogue data/04_models)
+│   │                      score, '_' and a short description of the used model (analogue data/04_models)
+│   ├── tables          <- Generated tables to be used in reporting or papers
 │
 ├── requirements.txt    <- The requirements file for reproducing the analysis environment.
 │
 ├── structure.txt       <- Shows project structure
 │
-├── .gitignore          <- Avoids uploading data, credentials,
-│                          outputs, system files etc.
+├── .gitignore          <- Avoids uploading data, credentials, outputs, system files etc.
 │
 ├── src_py                    <- Python source code for use in this project.
 │   ├── __init__.py           <- Makes src a Python module
