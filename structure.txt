@@ -24,7 +24,7 @@
 │   │                      with subset feature selection
 │   ├── 04_tuning       <- Fine tune your model
 │   ├── 05_preparation  <- Prepare your test data
-│   ├── 06_reports      <- List your results
+│   ├── 06_reports      <- List your results, also contains the code that returns results for papers
 │
 ├── references          <- Data dictionaries, manuals, etc.
 │
