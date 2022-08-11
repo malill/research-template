@@ -46,8 +46,8 @@
 │   ├── d00_utils             <- Functions used across the project
 │   │   └── remove_accents.py
 │   │
-│   ├── d01_data              <- Scripts for reading and writing data etc.
-│   │   └── load_data.py
+│   ├── d01_data              <- Scripts for reading and writing data etc. If it is not feasible to store data (raw,
+│   │                            intermediate, processed etc.) in folder, functions need to be defined to fetch data
 │   │
 │   ├── d02_intermediate      <- Scripts to transform data from raw to intermediate. CAUTION: some transformations
 │   │   │                        need processors from d03 (e.g. create a new feature used for filling NAs)
