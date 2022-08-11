@@ -50,28 +50,21 @@
 │   │                            intermediate, processed etc.) in folder, functions need to be defined to fetch data
 │   │
 │   ├── d02_intermediate      <- Scripts to transform data from raw to intermediate. CAUTION: some transformations
-│   │   │                        need processors from d03 (e.g. create a new feature used for filling NAs)
-│   │   └── create_int_payment_data.py
+│   │                            need processors from d03 (e.g. create a new feature used for filling NAs)
 │   │
 │   ├── d03_processing        <- Transformer classes to turn intermediate data into
-│   |   |                        modelling input (classes transform method add _a/_b columns when applicable)
-│   │   └── create_master_table.py
+│   |                            modelling input (classes transform method add _a/_b columns when applicable)
 │   │
 │   ├── d04_modelling         <- Scripts to train models and then use trained models to make predictions.
-│   │   └── train_model.py
 │   │
 │   ├── d05_model_evaluation  <- Scripts that analyse model performance and model selection.
-│   │   └── calculate_performance_metrics.py
 │   │
 │   ├── d06_analysis          <- Scripts to analyse results and run custom code for further analysis.
-│   │   │                        Naming convention is date YYYYMMDD (for ordering)
-│   │   └── 20200623_analysis.py
+│   │                            Naming convention is date YYYYMMDD (for ordering)
 │   │
 │   ├── d07_reporting         <- Scripts to produce reporting tables
-│   │   └── create_rpt_payment_summary.py
 │   │
 │   └── d08_visualisation     <- Scripts to create frequently used plots
-│       └── visualise_patient_journey.py
 │
 ├── src_r                     <- R source code for use in this project.
 │   ├── .gitkeep              <- TBD
