@@ -30,8 +30,9 @@
 │
 ├── results             <- Final analysis docs.
 │   ├── figures         <- Generated graphics and figures to be used in reporting or papers
-│   ├── submissions     <- Final submission files (e.g. csv). Naming convention is date YYYYMMDD (for ordering), '_',
-│   │                      score, '_' and a short description of the used model (analogue data/04_models)
+│   ├── presentations   <- Presentation slides (e.g. pptx) for conferences, seminars etc.
+│   ├── submissions     <- Final submission files (e.g. csv, docx, pdf) including versioning (e.g. v1). Folder also
+│   │                      contains revisions & resubmissions (create subfolders if applicable).
 │   ├── tables          <- Generated tables to be used in reporting or papers
 │
 ├── requirements.txt    <- The requirements file for reproducing the analysis environment.
