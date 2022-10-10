@@ -4,16 +4,15 @@
 
 This repository serves as a template for **scientific research projects** utilizing Python and R language.
 
+| **NOTE.** The structure of this project developed during my academic research career. 
+
 ## Project Intro/Objective :mag:
 
 The purpose of this project is _______.
 
 ### Remarks
 
-* All data exploration steps, are performed in notebooks using scripts, classes and 
-functions located in the /src folder.
-* Steps required for generating data stages and analyze models are performed in 
-module d06.
+* All data exploration steps, are performed in notebooks using scripts, classes and functions located in the /src folder.
 * To install the conda environment `ml-1` run `conda env create -f environment.yml`
 * To update module version in environment.yml run `conda env update --name ml-1 --file environment.yml --prune`
 
