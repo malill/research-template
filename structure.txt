@@ -42,30 +42,22 @@
 ├── .gitignore          <- Avoids uploading data, credentials, outputs, system files etc.
 │
 ├── src_py                    <- Python source code for use in this project.
-│   ├── __init__.py           <- Makes src a Python module
-│   │
+│   ├── __init__.py           <- Converts src into a Python module
 │   ├── d00_utils             <- Functions used across the project
-│   │   └── remove_accents.py
-│   │
 │   ├── d01_data              <- Scripts for reading and writing data etc. If it is not feasible to store data (raw,
 │   │                            intermediate, processed etc.) in folder, functions need to be defined to fetch data
-│   │
 │   ├── d02_intermediate      <- Scripts to transform data from raw to intermediate. CAUTION: some transformations
 │   │                            need processors from d03 (e.g. create a new feature used for filling NAs)
-│   │
 │   ├── d03_processing        <- Transformer classes to turn intermediate data into
 │   |                            modelling input (classes transform method add _a/_b columns when applicable)
-│   │
 │   ├── d04_modelling         <- Scripts to train models and then use trained models to make predictions.
-│   │
 │   ├── d05_model_evaluation  <- Scripts that analyse model performance and model selection.
-│   │
 │   ├── d06_analysis          <- Scripts to analyse results and run custom code for further analysis.
 │   │                            Naming convention is date YYYYMMDD (for ordering)
-│   │
 │   ├── d07_reporting         <- Scripts to produce reporting tables
-│   │
 │   └── d08_visualisation     <- Scripts to create frequently used plots
 │
 ├── src_r                     <- R source code for use in this project.
-│   ├── .gitkeep              <- TBD
+│   ├── d00_utils             <- Functions used across the project
+│   ├── d01_dscr_stat         <- Descriptive Statistics
+│   └── d02_ind_stat          <- Inductive Statistics
