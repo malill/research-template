@@ -2,7 +2,7 @@
 
 ![version](https://img.shields.io/badge/version-1.0-blue) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) ![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)
 
-This repository serves as a template for **scientic research projects** utilizing Python and R language.
+This repository serves as a template for **scientific research projects** utilizing Python and R language.
 
 ## Project Intro/Objective :mag:
 
