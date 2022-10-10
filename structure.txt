@@ -2,7 +2,7 @@
 ├── README.md           <- The top-level README for developers.
 ├── conf                <- Space for credentials
 │
-├── data
+├── data                <- If data sets are too large for repo include in .gitignore and calculate on device
 │   ├── 01_raw          <- Immutable input data
 │   ├── 02_intermediate <- Cleaned version of raw (no missing values, outliers, unreadable data etc.)
 │   ├── 03_processed    <- Train data used to develop models (including interactions, new features etc. with 2 columns
@@ -13,12 +13,12 @@
 │   ├── 05_model_output <- Model output
 │   └── 06_reporting    <- Reports and input to frontend
 │
-├── docs                <- Space for documentation
+├── docs                <- Space for documentation. Can also included conceptualization and literature review.
 │
 ├── notebooks           <- Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), '_'
 │   │                      and 3 capital letters for kind of notebook.
-│   ├── 01_exploration  <- Get the data and explore given and potential features; note: expl. is an iterative process,
-│   │                      i.e. some steps might rely on intermediate/processed data.
+│   ├── 01_exploration  <- Get the data and explore given and potential features; NOTE(!): exploration is an ITERATIVE
+│   │                      process, i.e. some steps might rely on intermediate and/or processed data.
 │   ├── 02_processing   <- Prepare data for modeling (data: raw -> intermediate -> processed)
 │   ├── 03_analysis     <- Run many models and measure performance, significant features, errors, rerun models
 │   │                      with subset feature selection
@@ -29,7 +29,7 @@
 ├── references          <- Data dictionaries, manuals, etc.
 │
 ├── results             <- Final analysis docs.
-│   ├── figures         <- Generated graphics and figures to be used in reporting or papers
+│   ├── figures         <- Generated graphics and figures to be used in reporting, presentations or papers
 │   ├── presentations   <- Presentation slides (e.g. pptx) for conferences, seminars etc.
 │   ├── submissions     <- Final submission files (e.g. csv, docx, pdf) including versioning (e.g. v1). Folder also
 │   │                      contains revisions & resubmissions (create subfolders if applicable).

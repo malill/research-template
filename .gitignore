@@ -188,3 +188,8 @@ vignettes/*.pdf
 ############
 # e.g. large data sets
 # data/01_raw
+# data/02_intermediate
+# data/03_processed
+# data/04_models
+# data/05_model_output
+# data/06_reporting
