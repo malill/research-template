@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - black~=22.6.0
   - jupyter~=1.0.0
   - matplotlib~=3.5.2
   - numpy~=1.23.1
