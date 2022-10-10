@@ -26,7 +26,7 @@
 │   ├── 05_preparation  <- Prepare your test data
 │   ├── 06_reports      <- List your results, also contains the code that returns results for papers
 │
-├── references          <- Data dictionaries, manuals, etc.
+├── references          <- Data dictionaries, manuals, reference manager (e.g. EndNote) etc.
 │
 ├── results             <- Final analysis docs.
 │   ├── figures         <- Generated graphics and figures to be used in reporting, presentations or papers
