@@ -2,7 +2,9 @@
 ├── README.md           <- The top-level README for developers.
 ├── conf                <- Space for credentials
 │
-├── data                <- If data sets are too large for repo include in .gitignore and calculate on device
+├── data                <- If data sets are too large for repo include in .gitignore and download/provide locally. If
+│   │                      multiple data sets are used, create a seperate folder for each data set. Also data sets might
+│   │                      be merged. Each subfolder (i.e. data stage) should contain a data description (e.g. URL etc.).
 │   ├── 01_raw          <- Immutable input data
 │   ├── 02_intermediate <- Cleaned version of raw (no missing values, outliers, unreadable data etc.)
 │   ├── 03_processed    <- Train data used to develop models (including interactions, new features etc. with 2 columns
