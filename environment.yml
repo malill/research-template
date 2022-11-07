@@ -13,6 +13,7 @@ dependencies:
   - pytorch~=1.10
   - scikit-learn~=1.1
   - scipy~=1.8.0
+  - tqdm~=4.64.1
   - pip:
-    - tensorflow~=2.9.1
+      - tensorflow~=2.9.1
     # Since current version of tf not available on conda, we install via pip. (2.8. supports both CPU/GPU)
