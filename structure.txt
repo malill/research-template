@@ -5,28 +5,33 @@
 ├── data                <- If data sets are too large for repo include in .gitignore and download/provide locally. If
 │   │                      multiple data sets are used, create a seperate folder for each data set. Also data sets might
 │   │                      be merged. Each subfolder (i.e. data stage) should contain a data description (e.g. URL etc.).
-│   ├── 01_raw          <- Immutable input data
-│   ├── 02_intermediate <- Cleaned version of raw (no missing values, outliers, unreadable data etc.)
-│   ├── 03_processed    <- Train data used to develop models (including interactions, new features etc. with 2 columns
+│   ├── d01             <- Immutable input data. The raw and untouched (!) data.
+│   ├── d02             <- Cleaned and aggregated version of raw (no missing values, outliers, unreadable data etc.). No
+│   │                      renaming of columns.
+│   ├── d**             <- Enhanced data. E.g. data used to train models (incl. interactions, new features etc. with 2 columns
 │   │                      (_a, _b) whenever there are transformations using a datapoint's label as part of feature),
 │   │                      derived test data for prediction (using processed train data and _b columns when applicable)
-│   ├── 04_models       <- Trained models (.pkl files using joblib). Naming convention is date YYYYMMDD (for ordering),
+...
+│   ├── m01             <- Trained models (.pkl files using joblib). Naming convention is date YYYYMMDD (for ordering),
 │   │                      '_', score, '_' and a short description of the used model
-│   ├── 05_model_output <- Model output
-│   └── 06_reporting    <- Reports and input to frontend
+...
+│   ├── o01             <- Model output
+...
+│   ├── r01             <- Reports and input to frontend
+...
 │
 ├── docs                <- Space for documentation. Can also included conceptualization and literature review.
 │
 ├── notebooks           <- Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), '_'
 │   │                      and 3 capital letters for kind of notebook.
-│   ├── 01_exploration  <- Get the data and explore given and potential features; NOTE(!): exploration is an ITERATIVE
-│   │                      process, i.e. some steps might rely on intermediate and/or processed data.
-│   ├── 02_processing   <- Prepare data for modeling (data: raw -> intermediate -> processed)
-│   ├── 03_analysis     <- Run many models and measure performance, significant features, errors, rerun models
+│   ├── 01_eda          <- Exploratory data analysis: get the data and explore given and potential features; NOTE(!): 
+│   │                      exploration is an ITERATIVE process, i.e. some steps can rely on d02 (or higher) data.
+│   ├── 02_tra          <- Transform data for modeling (data: d01 -> d02 -> ...)
+│   ├── 03_ana          <- Analyze and run many models and measure performance, significant features, errors, rerun models
 │   │                      with subset feature selection
-│   ├── 04_tuning       <- Fine tune your model
-│   ├── 05_preparation  <- Prepare your test data
-│   ├── 06_reports      <- List your results, also contains the code that returns results for papers
+│   ├── 04_tun          <- (Fine) Tune your model
+│   ├── 05_pre          <- Prepare your test data
+│   ├── 06_rep          <- Report your results, also contains the code that returns results for papers
 │
 ├── references          <- Data dictionaries, manuals, reference manager (e.g. EndNote) etc.
 │
