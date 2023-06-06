@@ -8,8 +8,7 @@
 │   ├── d01             <- Immutable input data. The raw and untouched (!) data.
 │   ├── d02             <- Cleaned and aggregated version of raw (no missing values, outliers, unreadable data etc.). No
 │   │                      renaming of columns.
-│   ├── d**             <- Enhanced data. E.g. data used to train models (incl. interactions, new features etc. with 2 columns
-│   │                      (_a, _b) whenever there are transformations using a datapoint's label as part of feature),
+│   ├── d**             <- Enhanced data. E.g. data used to train models (incl. interactions, new features etc.),
 │   │                      derived test data for prediction (using processed train data and _b columns when applicable)
 ...
 │   ├── m01             <- Trained models (.pkl files using joblib). Naming convention is date YYYYMMDD (for ordering),
@@ -22,10 +21,10 @@
 │
 ├── docs                <- Space for documentation. Can also included conceptualization and literature review.
 │
-├── notebooks           <- Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), '_'
-│   │                      and 3 capital letters for kind of notebook.
-│   ├── 01_eda          <- Exploratory data analysis: get the data and explore given and potential features; NOTE(!): 
-│   │                      exploration is an ITERATIVE process, i.e. some steps can rely on d02 (or higher) data.
+├── notebooks           <- Jupyter & RMarkdown notebooks.
+│   │                    
+│   ├── 01_eda          <- Exploratory Data Analysis / Descriptive Statistics: 
+│   │                      NOTE(!): this is an ITERATIVE process, i.e. some NBs may rely on d02+ data.
 │   ├── 02_tra          <- Transform data for modeling (data: d01 -> d02 -> ...)
 │   ├── 03_ana          <- Analyze and run many models and measure performance, significant features, errors, rerun models
 │   │                      with subset feature selection
