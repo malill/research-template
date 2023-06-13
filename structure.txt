@@ -64,5 +64,5 @@
 ├── srcR                  <- R source code for use in this project.
 │   ├── dscrStat          <- Descriptive Statistics
 │   ├── indStat           <- Inductive Statistics
-│   ├── transform         <- Transform data. 
+│   ├── transform         <- Transform data
 │   └── util              <- Functions used across the project
