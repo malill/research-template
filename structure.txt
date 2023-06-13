@@ -2,9 +2,10 @@
 ├── README.md           <- The top-level README for developers.
 ├── conf                <- Space for credentials
 │
-├── data                <- If data sets are too large for repo include in .gitignore and download/provide locally. If
-│   │                      multiple data sets are used, create a seperate folder for each data set. Also data sets might
-│   │                      be merged. Each subfolder (i.e. data stage) should contain a data description (e.g. URL etc.).
+├── data                <- If data sets are too large for repo (or contain sensitive information) include in .gitignore 
+│   │                      and download/provide locally. If multiple data sets are used, create a seperate folder for 
+│   │                      each data set. Also data sets might be merged. Each subfolder (i.e. data stage) should 
+│   │                      contain a data description (e.g. URL etc.).
 │   ├── d01             <- Immutable input data. The raw and untouched (!) data.
 │   ├── d02             <- Cleaned and aggregated version of raw (no missing values, outliers, unreadable data etc.). No
 │   │                      renaming of columns.
@@ -18,6 +19,7 @@
 ...
 │   ├── r01             <- Reports and input to frontend
 ...
+│   └── info.txt        <- Contains data level information
 │
 ├── docs                <- Space for documentation. Can also included conceptualization and literature review.
 │
@@ -30,7 +32,7 @@
 │   │                      with subset feature selection
 │   ├── 04_tun          <- (Fine) Tune your model
 │   ├── 05_pre          <- Prepare your test data
-│   ├── 06_rep          <- Report your results, also contains the code that returns results for papers
+│   └── 06_rep          <- Report your results, also contains the code that returns results for papers
 │
 ├── references          <- Data dictionaries, manuals, reference manager (e.g. EndNote) etc.
 │
@@ -39,7 +41,7 @@
 │   ├── presentations   <- Presentation slides (e.g. pptx) for conferences, seminars etc.
 │   ├── submissions     <- Final submission files (e.g. csv, docx, pdf) including versioning (e.g. v1). Folder also
 │   │                      contains revisions & resubmissions (create subfolders if applicable).
-│   ├── tables          <- Generated tables to be used in reporting or papers
+│   └── tables          <- Generated tables to be used in reporting or papers
 │
 ├── requirements.txt    <- The requirements file for reproducing the analysis environment.
 │
@@ -47,23 +49,20 @@
 │
 ├── .gitignore          <- Avoids uploading data, credentials, outputs, system files etc.
 │
-├── src_py                    <- Python source code for use in this project.
-│   ├── __init__.py           <- Converts src into a Python module
-│   ├── d00_utils             <- Functions used across the project
-│   ├── d01_data              <- Scripts for reading and writing data etc. If it is not feasible to store data (raw,
-│   │                            intermediate, processed etc.) in folder, functions need to be defined to fetch data
-│   ├── d02_intermediate      <- Scripts to transform data from raw to intermediate. CAUTION: some transformations
-│   │                            need processors from d03 (e.g. create a new feature used for filling NAs)
-│   ├── d03_processing        <- Transformer classes to turn intermediate data into
-│   |                            modelling input (classes transform method add _a/_b columns when applicable)
-│   ├── d04_modelling         <- Scripts to train models and then use trained models to make predictions.
-│   ├── d05_model_evaluation  <- Scripts that analyse model performance and model selection.
-│   ├── d06_analysis          <- Scripts to analyse results and run custom code for further analysis.
-│   │                            Naming convention is date YYYYMMDD (for ordering)
-│   ├── d07_reporting         <- Scripts to produce reporting tables
-│   └── d08_visualisation     <- Scripts to create frequently used plots
+├── srcPy                 <- Python source code for use in this project.
+│   ├── __init__.py       <- Converts srcPy into a Python module
+│   ├── utils             <- Functions, settings, configuration etc. used across the project
+│   ├── data              <- Scripts for reading and writing data etc. If it is not feasible to store data (raw,
+│   │                        intermediate, processed etc.) in folder, functions need to be defined to fetch data
+│   ├── transform         <- Transform data. 
+│   ├── model             <- Train models and then use trained models to make predictions.
+│   ├── eval              <- Analyse model performance and model selection.
+│   ├── analysis          <- Analyse results and run custom code for further analysis.
+│   ├── report            <- Produce reporting tables
+│   └── vis               <- Create frequently used plots
 │
-├── src_r                     <- R source code for use in this project.
-│   ├── d00_utils             <- Functions used across the project
-│   ├── d01_dscr_stat         <- Descriptive Statistics
-│   └── d02_ind_stat          <- Inductive Statistics
+├── srcR                  <- R source code for use in this project.
+│   ├── utils             <- Functions used across the project
+│   ├── transform         <- Transform data. 
+│   ├── dscrStat          <- Descriptive Statistics
+│   └── indStat           <- Inductive Statistics
