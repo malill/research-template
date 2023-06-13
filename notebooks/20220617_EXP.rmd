@@ -3,21 +3,23 @@ title: "R Notebook"
 output: html_notebook
 ---
 
+Load R-Scripts in a separate R code chunk.
+
 ```{r}
-cat(getwd())
+source('../srcR/my_world.R')
 ```
 
 Use RStudio for working with RMarkdown files.
 
 ```{r}
-x <- 1
-source('../srcR/my_world.R')
-hello_world()
+myName <- "John"
+hello_world(myName)
 ```
 
-# Here a headline
+## Preview Output
 
-```{r}
-hello_world()
-```
+Press `Ctrl + Shift + K` to preview RMarkdown files. Use `Ctrl + S` to save current changes and reload preview.
 
+## Run All Code Chunks
+
+Press `Ctrl + Alt + R` to run all R code chunks.

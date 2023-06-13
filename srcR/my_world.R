@@ -1,3 +1,3 @@
-hello_world <- function() {
-  cat("Hello World")
+hello_world <- function(name) {
+  cat("Hello", name)
 }
