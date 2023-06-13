@@ -11,6 +11,13 @@ Use RStudio for working with RMarkdown files.
 
 ```{r}
 x <- 1
-source('../srcR/my_world.R') # won't work in Dataspell
+source('../srcR/my_world.R')
 hello_world()
 ```
+
+# Here a headline
+
+```{r}
+hello_world()
+```
+
