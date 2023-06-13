@@ -24,7 +24,7 @@ The purpose of this project is _______.
 
 To install the **conda environment** `ml-1` run `conda env create -f environment.yml` . Best practice shows, that you should modify/extend the environment name with your project name, e.g. `ml-1-recsys23` . To update module version in environment.yml run `conda env update --name ml-1 --file environment.yml --prune`
 
-## Virtual Environment (venv)
+## Virtual Environment (preferred)
 
 ```cmd
 # [Optional] If virtualenv is not installed run:

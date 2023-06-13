@@ -62,7 +62,7 @@
 │   └── vis               <- Create frequently used plots
 │
 ├── srcR                  <- R source code for use in this project.
-│   ├── utils             <- Functions used across the project
-│   ├── transform         <- Transform data. 
 │   ├── dscrStat          <- Descriptive Statistics
-│   └── indStat           <- Inductive Statistics
+│   ├── indStat           <- Inductive Statistics
+│   ├── transform         <- Transform data. 
+│   └── util              <- Functions used across the project
