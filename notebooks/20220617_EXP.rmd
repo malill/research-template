@@ -17,6 +17,6 @@ However, it is recommended to use RStudio for working with R.
 
 ```{r}
 x <- 1
-source('../src_r/my_world.R') # won't work in Dataspell
+source('../srcR/my_world.R') # won't work in Dataspell
 hello_world()
 ```

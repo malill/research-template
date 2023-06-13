@@ -1,5 +1,5 @@
 ├── environment.yml     <- Basic Python dependencies for Conda environment.
-├── README.md           <- The top-level README for developers.
+├── README.md           <- The top-level README.
 ├── conf                <- Space for credentials
 │
 ├── data                <- If data sets are too large for repo (or contain sensitive information) include in .gitignore 
@@ -51,14 +51,14 @@
 │
 ├── srcPy                 <- Python source code for use in this project.
 │   ├── __init__.py       <- Converts srcPy into a Python module
-│   ├── utils             <- Functions, settings, configuration etc. used across the project
+│   ├── analysis          <- Analyse results and run custom code for further analysis.
 │   ├── data              <- Scripts for reading and writing data etc. If it is not feasible to store data (raw,
 │   │                        intermediate, processed etc.) in folder, functions need to be defined to fetch data
-│   ├── transform         <- Transform data. 
-│   ├── model             <- Train models and then use trained models to make predictions.
 │   ├── eval              <- Analyse model performance and model selection.
-│   ├── analysis          <- Analyse results and run custom code for further analysis.
+│   ├── model             <- Train models and then use trained models to make predictions.
 │   ├── report            <- Produce reporting tables
+│   ├── transform         <- Transform data. 
+│   ├── util              <- Functions, settings, configuration etc. used across the project
 │   └── vis               <- Create frequently used plots
 │
 ├── srcR                  <- R source code for use in this project.

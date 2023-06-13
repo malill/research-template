@@ -1,10 +1,13 @@
+<p float="left">
+  <img src="./docs/.readme/Python_logo_and_wordmark.svg" height="75" />
+  <img src="./docs/.readme/R_logo.svg" height="75" />
+</p>
+
 # research-template :microscope:
 
-![version](https://img.shields.io/badge/version-1.0-blue) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) ![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)
+![version](https://img.shields.io/badge/version-1.1-blue) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) ![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)
 
 This repository serves as a template for **scientific research projects** utilizing Python and R language.
-
-| **NOTE.** The structure of this project developed during my academic research career. 
 
 # Project Intro/Objective :mag:
 
@@ -12,10 +15,10 @@ The purpose of this project is _______.
 
 # Remarks
 * A definition of the structure can be obtained under `structure.txt`
-
-* All data exploration steps, are performed in notebooks using scripts, classes and functions located in the `/src_*` folders.
-* To run **Jupyter Notebooks** and import custom modules (under `/src_py`) in Visual Studio Code you need to change `.vscode/settings.json` property `jupyter.notebookFileRoot` to `${workspaceFolder`
-# Environment Management
+* All data exploration steps are performed in notebooks using scripts, classes and functions located in the `/srcPy` and `/srcR` folders.
+* To run **Jupyter Notebooks** and import custom modules (under `/srcPy`) in Visual Studio Code you need to change `.vscode/settings.json` property `jupyter.notebookFileRoot` to `${workspaceFolder`
+  
+# Environment Management (Python)
 
 ## Anaconda Environement
 
