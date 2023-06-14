@@ -3,6 +3,7 @@ jupyter
 matplotlib
 numpy
 pandas
+pytest
 scikit-learn
 scipy
 tensorflow

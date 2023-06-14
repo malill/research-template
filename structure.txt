@@ -62,3 +62,5 @@
 │   ├── indStat           <- Inductive Statistics
 │   ├── transform         <- Transform data
 │   └── util              <- Functions used across the project
+│
+└── tests                 <- Python (PyTest) folder
