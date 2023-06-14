@@ -23,16 +23,11 @@
 │
 ├── docs                <- Space for documentation. Can also included conceptualization and literature review.
 │
-├── notebooks           <- Jupyter & RMarkdown notebooks.
+├── notebooks           <- Jupyter & RMarkdown notebooks, used for exploratory data analysis, result presentation, insight sharing
 │   │                    
-│   ├── 01_eda          <- Exploratory Data Analysis / Descriptive Statistics: 
+│   ├── eda          <- Exploratory Data Analysis / Descriptive Statistics: 
 │   │                      NOTE(!): this is an ITERATIVE process, i.e. some NBs may rely on d02+ data.
-│   ├── 02_tra          <- Transform data for modeling (data: d01 -> d02 -> ...)
-│   ├── 03_ana          <- Analyze and run many models and measure performance, significant features, errors, rerun models
-│   │                      with subset feature selection
-│   ├── 04_tun          <- (Fine) Tune your model
-│   ├── 05_pre          <- Prepare your test data
-│   └── 06_rep          <- Report your results, also contains the code that returns results for papers
+│   └── res          <- Report your results, also contains the code that returns results for papers
 │
 ├── references          <- Data dictionaries, manuals, reference manager (e.g. EndNote) etc.
 │
@@ -51,13 +46,14 @@
 │
 ├── srcPy                 <- Python source code for use in this project.
 │   ├── __init__.py       <- Converts srcPy into a Python module
-│   ├── analysis          <- Analyse results and run custom code for further analysis.
+│   ├── ana               <- Analyse results, run models and custom code for further analysis. Analyze and run many models 
+│   │                        and measure performance, significant features, errors, rerun models with subset feature selection
 │   ├── data              <- Scripts for reading and writing data etc. If it is not feasible to store data (raw,
 │   │                        intermediate, processed etc.) in folder, functions need to be defined to fetch data
 │   ├── eval              <- Analyse model performance and model selection.
-│   ├── model             <- Train models and then use trained models to make predictions.
+│   ├── model             <- Model functions / classes definitions
 │   ├── report            <- Produce reporting tables
-│   ├── transform         <- Transform data. 
+│   ├── transform         <- Transform data
 │   ├── util              <- Functions, settings, configuration etc. used across the project
 │   └── vis               <- Create frequently used plots
 │
