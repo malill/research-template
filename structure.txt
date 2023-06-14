@@ -25,9 +25,9 @@
 │
 ├── notebooks           <- Jupyter & RMarkdown notebooks, used for exploratory data analysis, result presentation, insight sharing
 │   │                    
-│   ├── eda          <- Exploratory Data Analysis / Descriptive Statistics: 
+│   ├── eda             <- Exploratory Data Analysis / Descriptive Statistics: 
 │   │                      NOTE(!): this is an ITERATIVE process, i.e. some NBs may rely on d02+ data.
-│   └── res          <- Report your results, also contains the code that returns results for papers
+│   └── res             <- Report your results, also contains the code that returns results for papers
 │
 ├── references          <- Data dictionaries, manuals, reference manager (e.g. EndNote) etc.
 │
