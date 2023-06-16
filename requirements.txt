@@ -1,4 +1,5 @@
 black
+dvc
 jupyter
 matplotlib
 numpy
